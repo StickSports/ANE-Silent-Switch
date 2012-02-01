@@ -1,0 +1,16 @@
+<extension xmlns="http://ns.adobe.com/air/extension/2.5">
+	<id>com.sticksports.nativeExtensions.SilentSwitch</id>
+	<versionNumber>0.1.0</versionNumber>
+	<platforms>
+		<platform name="iPhone-ARM">
+			<applicationDeployment>
+				<nativeLibrary>libSilentSwitchIosExtension.a</nativeLibrary>
+				<initializer>SilentSwitchExtensionInitializer</initializer>
+				<finalizer>SilentSwitchExtensionFinalizer</finalizer>
+			</applicationDeployment>
+		</platform>
+		<platform name="default">
+			<applicationDeployment/>
+		</platform>
+	</platforms>
+</extension>
