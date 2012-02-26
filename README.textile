@@ -2,11 +2,11 @@ h1. Air Native Extension for iOS Silent Switch
 
 This is an "Air native extension":http://www.adobe.com/devnet/air/native-extensions-for-air.html for the hardware silent switch on the iOS platform.
 
-This extension enables the hardware silent switch on the phone to mute sounds that are played in an Air project. The extension has a single command that mutes all currently playing sounds. We have not found a way to mute sounds that will be played, only sounds that are playing, so for full silent-switch functionality you should call the method in this extension immediately after playing any sound. You will also need to call the method when your app returns from the background.
+This extension enables the hardware silent switch on the phone to mute sounds that are played in an Air project. The extension has a single command that mutes all current and future sounds. The setting must be re-applied when your app returns from the background.
 
 h3. Version
 
-This is version 0.1 of this extension.
+This is version 0.2 of this extension.
 
 h3. Binary files
 
@@ -14,18 +14,32 @@ The bin folder contains the compiled extension and the default swc, which can be
 
 h3. Building
 
-Requirements - Adobe Air SDK 3.1 or later, XCode IDE, iOS SDK 5.0 or later, Flurry Analytics iPhone SDK
+Requirements - Adobe Air SDK 3.1 or later, XCode IDE
 
 * Add the FlashRuntimeExtensions.h file from the Adobe Air sdk to the ios/SilentSwitchIosExtension folder in the project.
 * Create a copy of the build/example.build.config file in the build folder, calling it build.config and change the properties in this file to match your system.
 ** A certificate is required by the build script. This may be a self-signed certificate created by Adobe Air.
 * Run the ant build script build.xml. This creates the native extension and default swc file inside the bin folder.
 
+h3. The test project
+
+A simple test project is included for testing the extension. To build this air project
+
+* Run the ant build script test/build.xml. This creates the test ipa inside the test/bin folder.
+
 h3. Using the extension
 
-h4. Make all currently playing sounds obey the silent switch setting -
+h4. Make all current and future sounds obey the silent switch setting -
 
 @SilentSwitch.apply()@
+
+h3. Example code
+
+You can see the feature in action in the source code of the test project.
+
+h3. Compiling your project
+
+This is an Air 3.1 extension. Specify the path to the iphone SDK when compiling the project, using the functionality built in to your IDE or the platformsdk parameter if building with adt from the command line or a build script.
 
 h3. Developers
 

@@ -1,5 +1,6 @@
 # General
 temp/*
+test/bin/*
 build.config
 
 # Not licensed for distribution
