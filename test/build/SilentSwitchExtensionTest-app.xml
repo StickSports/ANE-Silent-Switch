@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?><application xmlns="http://ns.adobe.com/air/application/3.1">
-	<id>yourAppId</id>
+	<id>SilentSwitchExtensionTest</id>
 	<filename>SilentSwitchExtensionTest</filename>
 	<name>Dummy1</name>
-	<versionNumber>0.2.0</versionNumber>
-	<versionLabel>v0.2.0</versionLabel>
+	<versionNumber>1.0.0</versionNumber>
+	<versionLabel>v1.0.0</versionLabel>
 	<initialWindow>
 		<content>SilentSwitchExtensionTest.swf</content>
 		<visible>true</visible>

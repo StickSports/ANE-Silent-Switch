@@ -23,13 +23,13 @@ package com.sticksports.nativeExtensions
 			}
 			// Setting can only be applied if there is a sound playing.
 			var sound : Sound = new Sound();
-			sound.addEventListener( SampleDataEvent.SAMPLE_DATA, sineWaveGenerator );
+			sound.addEventListener( SampleDataEvent.SAMPLE_DATA, silence );
 			var channel : SoundChannel = sound.play( 0, 1 );
 			extensionContext.call( "initSilentSwitch" );
 			channel.stop();
 		}
 
-		private static function sineWaveGenerator( event : SampleDataEvent ) : void
+		private static function silence( event : SampleDataEvent ) : void
 		{
 			event.data.writeFloat( 0 );
 			event.data.writeFloat( 0 );

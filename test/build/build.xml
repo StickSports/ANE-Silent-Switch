@@ -51,7 +51,7 @@
 			<arg value="Default.png"/>
 			<arg value="icons"/>
 			<arg line="-extdir ../../bin/"/>
-			<arg line="-platformsdk /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk/"/>
+			<arg line="-platformsdk ${ios.sdk}"/>
 		</exec>
 	</target>
 </project>

@@ -6,7 +6,7 @@ This extension enables the hardware silent switch on the phone to mute sounds th
 
 h3. Version
 
-This is version 0.2 of this extension.
+This is version 1.0 of this extension.
 
 h3. Binary files
 
