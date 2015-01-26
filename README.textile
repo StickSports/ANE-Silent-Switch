@@ -1,5 +1,7 @@
 h1. Air Native Extension for iOS Silent Switch
 
+*Please note that we are no longer able to support this project and are not contributing to it.*
+
 This is an "Air native extension":http://www.adobe.com/devnet/air/native-extensions-for-air.html for the hardware silent switch on the iOS platform.
 
 This extension enables the hardware silent switch on the phone to mute sounds that are played in an Air project. The extension has a single command that mutes all current and future sounds. The setting must be re-applied when your app returns from the background.
